@@ -1,4 +1,4 @@
-# NLP Resume Screening & Ranking Engine
+# Smart Resume Screening & Candidate Ranking Engine
 
 ## Overview
 This project is an automated, two-step Natural Language Processing pipeline for filtering and ranking candidate resumes against a target job description. The system screens resumes using machine learning classification before ranking them via mathematical text similarity.
