@@ -6,10 +6,10 @@ This project is an automated, two-step Natural Language Processing pipeline for 
 ---
 ## Technical Workflow
 
-### 1. Stage 1: The ML Gatekeeper
+### 1. Filter Stage
 A Logistic Regression classifier trained on a historical HuggingFace resume dataset predicts the general category of the incoming resume. This acts as a filter, instantly dropping resumes that do not match the target job category.
 
-### 2. Stage 2: The Scoring Engine
+### 2. Scoring Stage
 Surviving resumes are mathematically scored against the core job description. Cleaned text is converted into a matrix of word vectors using scikit-learn's `TfidfVectorizer`. We then apply Cosine Similarity to calculate the geometric angle between the vectors, ranking the conceptual alignment regardless of resume length.
 
 ---
